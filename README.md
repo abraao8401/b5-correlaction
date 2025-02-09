@@ -1,3 +1,17 @@
+***
+
+***RECOMENDAÇÃO PARA COLABORADORES***
+
+***Utilize o seguinte padrão de commit:***
+
+`:emoji: <tipo>(escopo): <descrição>`
+
+***Veja mais detalhes da formatação em: [Commit Patterns](https://dev.to/renatoadorno/padroes-de-commits-commit-patterns-41co)***
+
+***Adicionem os trabalhos utilizados na pasta Bibliografia e a referência ao final do Readme.***
+
+***
+
 # Análise de Correlação Multimodal: Relação entre Transcrição de Áudio e Conteúdo Visual em Vídeos
 
 ## Descrição do Projeto

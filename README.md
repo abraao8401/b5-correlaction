@@ -26,7 +26,6 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 
 - **Análise de Vídeos**: Processamento de quadros do vídeo para extração de características visuais.
 - **Reconhecimento Automático de Fala (ASR)**: Transcrição automática do áudio para análise textual.
-- **Processamento de Linguagem Natural (NLP)**: Extração de informações semânticas do áudio transcrito.
 - **Aprendizado Multimodal**: Integração de embeddings textuais e visuais para avaliação de similaridade entre áudio e vídeo.
 - **Avaliação de Correlação**: Cálculo de um índice de correlação entre o conteúdo falado e os elementos visuais, com métricas como Similaridade Cosine e Coeficiente de Correlação de Pearson.
 - **Relatórios Automatizados**: Geração de relatórios destacando vídeos com alta ou baixa coerência narrativa entre o conteúdo visual e auditivo.
@@ -43,17 +42,18 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 ## Resultados Esperados
 
 - Desenvolvimento de um modelo que calcule um **índice de correlação multimodal** com um coeficiente de concordância superior a 0,75 em vídeos altamente coerentes.
-- Extração de embeddings textuais e visuais utilizando modelos pré-treinados como **CLIP** e **BERT**.
+- Extração de embeddings textuais e visuais utilizando modelos pré-treinados como **CLIP**.
 - Avaliação utilizando métricas como **Similaridade Cosine**, **Coeficiente de Correlação de Pearson**, e métricas de alinhamento entre texto e imagem.
 - Relatório detalhado com exemplos práticos, destacando vídeos coerentes e inconsistentes em termos de narrativa visual e auditiva.
 
 ## Possíveis Tecnologias Utilizadas
 
+- **Jupyter Notebook**: Ambiente para execução do projeto e interface com usuário
 - **Python**: Linguagem principal para desenvolvimento do sistema.
+- **FFmpeg**: Para manipulação de vídeo (conversão de formato e extração de áudio)
 - **OpenCV**: Para análise de vídeos e extração de quadros.
-- **SpeechRecognition**: Para transcrição automática de áudio (ASR).
-- **Transformers (BERT)**: Para embeddings textuais e análise semântica do áudio.
-- **CLIP (Contrastive Language-Image Pre-Training)**: Para extração de embeddings visuais e integração multimodal.
+- **Whisper**: Para transcrição automática de áudio (ASR).
+- **CLIP (Contrastive Language-Image Pre-Training)**: Para extração de embeddings visuais, textuais e integração multimodal.
 - **Scikit-learn**: Para construção e avaliação de modelos de aprendizado de máquina.
 - **Matplotlib / Seaborn**: Para visualização de resultados e geração de gráficos de correlação.
 - **Streamlit**: Para construção da interface do usuário (caso aplicável).

@@ -38,7 +38,7 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 - Similaridade → Calculada entre embeddings textuais e visuais.
 - Classificação → O vídeo é classificado como coerente ou inconsistente.
 - Saída → Um relatório final é gerado.
-- 
+  
 ## Resultados Esperados
 
 - Desenvolvimento de um modelo que calcule um **índice de correlação multimodal** com um coeficiente de concordância superior a 0,75 em vídeos altamente coerentes.

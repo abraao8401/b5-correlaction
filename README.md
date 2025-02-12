@@ -20,6 +20,8 @@ Este projeto visa desenvolver uma solução para medir a correlação entre o co
 
 O sistema desenvolvido será capaz de calcular um índice de correlação multimodal utilizando **embeddings visuais** e **embeddings textuais**, quantificando a similaridade semântica entre o que é falado e o que é mostrado no vídeo.
 
+[Diagrama C4](C4-diagrama.png)
+
 ## Funcionalidades
 
 - **Análise de Vídeos**: Processamento de quadros do vídeo para extração de características visuais.
@@ -28,7 +30,16 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 - **Aprendizado Multimodal**: Integração de embeddings textuais e visuais para avaliação de similaridade entre áudio e vídeo.
 - **Avaliação de Correlação**: Cálculo de um índice de correlação entre o conteúdo falado e os elementos visuais, com métricas como Similaridade Cosine e Coeficiente de Correlação de Pearson.
 - **Relatórios Automatizados**: Geração de relatórios destacando vídeos com alta ou baixa coerência narrativa entre o conteúdo visual e auditivo.
+  
+## Fluxo de Dados
 
+- Entrada → O usuário fornece um vídeo.
+- Manipulação → O vídeo é processado para extração de frames e transcrição.
+- Embeddings → CLIP gera embeddings visuais e textuais
+- Similaridade → Calculada entre embeddings textuais e visuais.
+- Classificação → O vídeo é classificado como coerente ou inconsistente.
+- Saída → Um relatório final é gerado.
+- 
 ## Resultados Esperados
 
 - Desenvolvimento de um modelo que calcule um **índice de correlação multimodal** com um coeficiente de concordância superior a 0,75 em vídeos altamente coerentes.

@@ -20,7 +20,7 @@ Este projeto visa desenvolver uma solução para medir a correlação entre o co
 
 O sistema desenvolvido será capaz de calcular um índice de correlação multimodal utilizando **embeddings visuais** e **embeddings textuais**, quantificando a similaridade semântica entre o que é falado e o que é mostrado no vídeo.
 
-[Diagrama C4](C4-diagrama.png)
+[Diagrama C4](https://github.com/abraao8401/b5-correlaction/blob/main/FinalC4diagram.png)
 
 ## Funcionalidades
 

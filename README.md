@@ -58,6 +58,35 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 - **Matplotlib / Seaborn**: Para visualização de resultados e geração de gráficos de correlação.
 - **Streamlit**: Para construção da interface do usuário (caso aplicável).
   
+## Possíveis Métricas a Serem Avaliadas
+
+### Precisão  
+- **Objetivo:** Avaliar a performance do modelo na categorização de vídeos como "coerentes" ou "inconsistentes".  
+- **Relevância:** Essencial para aplicações práticas (ex.: priorizar revisão de vídeos inconsistentes em conteúdos educativos).  
+
+### Taxa de Falsos Positivos/Negativos  
+- **Objetivo:** Quantificar erros do modelo (ex.: classificar um vídeo coerente como inconsistente).  
+- **Relevância:** Crítico para evitar censura indevida (fake news) ou recomendações equivocadas (metadados).  
+
+### Tempo de Processamento por Vídeo  
+- **Objetivo:** Medir a eficiência do sistema (ex.: segundos por minuto de vídeo).  
+- **Relevância:** Impacta a escalabilidade para grandes volumes (ex.: plataformas de streaming).  
+
+### Diversidade de Datasets e Generalização  
+- **Objetivo:** Avaliar a consistência do modelo em diferentes tipos de vídeo (educativos, notícias, redes sociais).  
+- **Relevância:** Garante robustez em cenários variados, evitando *overfitting*.  
+
+### Qualidade dos Embeddings (ex.: Validação em Benchmarks)  
+- **Objetivo:** Verificar se os *embeddings* do CLIP capturam adequadamente semântica visual/textual.  
+- **Relevância:** *Embeddings* de baixa qualidade invalidam a análise de correlação.  
+
+### Satisfação do Usuário (caso haja UI)  
+- **Objetivo:** Coletar feedback sobre usabilidade, clareza de relatórios e utilidade prática.  
+- **Relevância:** Determina a adoção da ferramenta em contextos reais (ex.: educadores ou fact-checkers).  
+
+### Variação de Desempenho em Domínios Específicos  
+- **Objetivo:** Medir a eficácia em aplicações específicas (ex.: detecção de fake news vs. vídeos educativos).  
+- **Relevância:** Baseado na bibli
 ## Bibliografia
 
 ABDALI, Sara; SHAHAM, Sina; KRISHNAMACHARI, Bhaskar. Multi-modal Misinformation Detection: Approaches, Challenges and Opportunities. Journal, v. 1, n. 1, p. 1-37, jan. 2016. Artigo 1.

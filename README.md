@@ -36,7 +36,18 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 - Manipulação → O vídeo é processado para extração de frames e transcrição.
 - Embeddings → CLIP gera embeddings visuais e textuais
 - Similaridade → Calculada entre embeddings textuais e visuais.
-- Classificação → O vídeo é classificado como coerente ou inconsistente.
+- Classificação → O vídeo é classificado com base em seus níveis de coerência.
+  (Definição de Limiares (Thresholds) para Similaridade)
+  ```python
+  
+  def classify_coherence(similaridade):
+      if similaridade < 0.4:
+          return "Baixa Coerência"
+      elif 0.4 <= similaridade < 0.7:
+          return "Média Coerência"
+      else:
+          return "Alta Coerência"
+        
 - Saída → Um relatório final é gerado.
   
 ## Resultados Esperados

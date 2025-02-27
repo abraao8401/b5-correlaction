@@ -34,7 +34,7 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 
 - Entrada → O usuário fornece um vídeo.
 - Manipulação → O vídeo é processado para extração de frames e transcrição.
-- Embeddings → CLIP gera embeddings visuais e textuais
+- Embeddings → CLIP gera embeddings visuais e BERT textuais
 - Similaridade → Calculada entre embeddings textuais e visuais.
 - Classificação → O vídeo é classificado com base em seus níveis de coerência.
   (Definição de Limiares (Thresholds) para Similaridade)
@@ -53,21 +53,22 @@ O sistema desenvolvido será capaz de calcular um índice de correlação multim
 ## Resultados Esperados
 
 - Desenvolvimento de um modelo que calcule um **índice de correlação multimodal** com um coeficiente de concordância superior a 0,75 em vídeos altamente coerentes.
-- Extração de embeddings textuais e visuais utilizando modelos pré-treinados como **CLIP**.
+- Extração de embeddings textuais e visuais utilizando modelos pré-treinados como **CLIP**e **BERT**.
 - Avaliação utilizando métricas como **Similaridade Cosine**, **Coeficiente de Correlação de Pearson**, e métricas de alinhamento entre texto e imagem.
 - Relatório detalhado com exemplos práticos, destacando vídeos coerentes e inconsistentes em termos de narrativa visual e auditiva.
 
-## Possíveis Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Jupyter Notebook**: Ambiente para execução do projeto e interface com usuário
 - **Python**: Linguagem principal para desenvolvimento do sistema.
 - **FFmpeg**: Para manipulação de vídeo (conversão de formato e extração de áudio)
 - **OpenCV**: Para análise de vídeos e extração de quadros.
 - **Whisper**: Para transcrição automática de áudio (ASR).
-- **CLIP (Contrastive Language-Image Pre-Training)**: Para extração de embeddings visuais, textuais e integração multimodal.
+- **CLIP (Contrastive Language-Image Pre-Training)**: Para extração de embeddings visuais.
+- **BERT (Bidirecional Encoder Representations from Transformers )**: Para extração de embeddings textuais.
 - **Scikit-learn**: Para construção e avaliação de modelos de aprendizado de máquina.
 - **Matplotlib / Seaborn**: Para visualização de resultados e geração de gráficos de correlação.
-- **Streamlit**: Para construção da interface do usuário (caso aplicável).
+
   
 ## Possíveis Métricas a Serem Avaliadas
 
